@@ -1,6 +1,3 @@
 #!/bin/bash
 O string SCHOOL School data
 !:mime School
-chmod u+x school.mgc
-file -C -m school.mgc
-file -C -m school.mgc *
