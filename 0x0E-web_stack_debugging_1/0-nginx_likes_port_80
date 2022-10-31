@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Makes sure nginx is listening on port 80 for all IPv4
+apt-get update
+apt-get -y install curl
+rm /etc/nginx/sites-available/*
+rm /etc/nginx/sites-enabled/*~
 sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 sudo service nginx start
